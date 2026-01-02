@@ -28,7 +28,7 @@ type alias Dimensions =
 
 type alias Cell =
     { answer : Maybe String
-    , label : Maybe Int
+    , label : Maybe String
     , cellType : Maybe Int
     }
 
@@ -88,7 +88,7 @@ cellDecoder : D.Decoder Cell
 cellDecoder =
     D.map3 Cell
         (D.maybe (D.field "answer" D.string))
-        (D.maybe (D.field "label" D.int))
+        (D.maybe (D.field "label" D.string))
         (D.maybe (D.field "type" D.int))
 
 
@@ -187,7 +187,7 @@ encodePuzzleCell cell =
                 cellValue =
                     case cell.label of
                         Just label ->
-                            String.fromInt label
+                            label
 
                         Nothing ->
                             "0"
