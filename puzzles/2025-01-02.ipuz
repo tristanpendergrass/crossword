@@ -1,0 +1,832 @@
+{
+  "version": "http://ipuz.org/v2",
+  "kind": [
+    "http://ipuz.org/crossword#1"
+  ],
+  "dimensions": {
+    "height": 15,
+    "width": 15
+  },
+  "clues": {
+    "Across": [
+      {
+        "number": "1",
+        "clue": "First in a series"
+      },
+      {
+        "number": "5",
+        "clue": "Pixel rival"
+      },
+      {
+        "number": "10",
+        "clue": "Snap"
+      },
+      {
+        "number": "14",
+        "clue": "Average Joe's name (that's not Joe)"
+      },
+      {
+        "number": "15",
+        "clue": "Bases loaded, e.g."
+      },
+      {
+        "number": "16",
+        "clue": "Iris's location"
+      },
+      {
+        "number": "17",
+        "clue": "Temporary cover of a sort"
+      },
+      {
+        "number": "18",
+        "clue": "Epic with the line \"Come, friend, you too must die\""
+      },
+      {
+        "number": "19",
+        "clue": "Festival covering"
+      },
+      {
+        "number": "20",
+        "clue": "Start of a quip by comic Steven Wright"
+      },
+      {
+        "number": "23",
+        "clue": "Summer abroad"
+      },
+      {
+        "number": "24",
+        "clue": "Sounds of refreshment"
+      },
+      {
+        "number": "25",
+        "clue": "King's ___"
+      },
+      {
+        "number": "27",
+        "clue": "Adjust on the timeline"
+      },
+      {
+        "number": "29",
+        "clue": "Pressure cooker sound"
+      },
+      {
+        "number": "31",
+        "clue": "Producer of an explosion"
+      },
+      {
+        "number": "32",
+        "clue": "___ Robinson, mother of Michelle Obama"
+      },
+      {
+        "number": "34",
+        "clue": "Deep notes"
+      },
+      {
+        "number": "35",
+        "clue": "Middle of the quip ... and a hint to eight squares in this puzzle"
+      },
+      {
+        "number": "38",
+        "clue": "French buds"
+      },
+      {
+        "number": "40",
+        "clue": "Plotted"
+      },
+      {
+        "number": "41",
+        "clue": "Up to, informally"
+      },
+      {
+        "number": "42",
+        "clue": "Low pair"
+      },
+      {
+        "number": "44",
+        "clue": "Beyond cross"
+      },
+      {
+        "number": "48",
+        "clue": "Drink featured in the Elvis film \"Blue Hawaii\""
+      },
+      {
+        "number": "50",
+        "clue": "Govt. prosecutors"
+      },
+      {
+        "number": "51",
+        "clue": "Besides"
+      },
+      {
+        "number": "52",
+        "clue": "End of the quip"
+      },
+      {
+        "number": "56",
+        "clue": "Actor Jannings"
+      },
+      {
+        "number": "57",
+        "clue": "Youngest golfer to score below his age in a P.G.A. Tour event"
+      },
+      {
+        "number": "58",
+        "clue": "White Sox or Red Sox player, informally"
+      },
+      {
+        "number": "59",
+        "clue": "Runner's assignment"
+      },
+      {
+        "number": "60",
+        "clue": "Cricket segments"
+      },
+      {
+        "number": "61",
+        "clue": "Miller option"
+      },
+      {
+        "number": "62",
+        "clue": "Flower whose name means \"flame\" in ancient Greek"
+      },
+      {
+        "number": "63",
+        "clue": "Lead-in to maniac"
+      },
+      {
+        "number": "64",
+        "clue": "Troublesome threes, e.g."
+      }
+    ],
+    "Down": [
+      {
+        "number": "1",
+        "clue": "\"Jeopardy!\" offering"
+      },
+      {
+        "number": "2",
+        "clue": "12-time Olympic swimming medalist Ryan ___"
+      },
+      {
+        "number": "3",
+        "clue": "Worn at the edges"
+      },
+      {
+        "number": "4",
+        "clue": "Prefix with sexual"
+      },
+      {
+        "number": "5",
+        "clue": "Possible response to \"Where are you?\""
+      },
+      {
+        "number": "6",
+        "clue": "Craft kit fabrics"
+      },
+      {
+        "number": "7",
+        "clue": "\"Right away, boss!\""
+      },
+      {
+        "number": "8",
+        "clue": "Comedian Trevor"
+      },
+      {
+        "number": "9",
+        "clue": "\"___ Game\" (1986 Hugo Award winner)"
+      },
+      {
+        "number": "10",
+        "clue": "Cot alternative"
+      },
+      {
+        "number": "11",
+        "clue": "Wear out one's welcome, say"
+      },
+      {
+        "number": "12",
+        "clue": "Achilles, for two"
+      },
+      {
+        "number": "13",
+        "clue": "Muesli bit"
+      },
+      {
+        "number": "21",
+        "clue": "Underworld figure"
+      },
+      {
+        "number": "22",
+        "clue": "Is in the past"
+      },
+      {
+        "number": "26",
+        "clue": "Chain parts: Abbr."
+      },
+      {
+        "number": "28",
+        "clue": "Singer Tori"
+      },
+      {
+        "number": "29",
+        "clue": "Head liners?"
+      },
+      {
+        "number": "30",
+        "clue": "Choquequirao inhabitant"
+      },
+      {
+        "number": "33",
+        "clue": "\"Let ___!\""
+      },
+      {
+        "number": "34",
+        "clue": "Urban addr. specification"
+      },
+      {
+        "number": "35",
+        "clue": "Like cuisine with lumpia and longganisa"
+      },
+      {
+        "number": "36",
+        "clue": "\"Looks that way, unfortunately\""
+      },
+      {
+        "number": "37",
+        "clue": "Minimal"
+      },
+      {
+        "number": "38",
+        "clue": "Bread box?"
+      },
+      {
+        "number": "39",
+        "clue": "Noxious"
+      },
+      {
+        "number": "42",
+        "clue": "\"Qué ___?\" (\"How's it going?,\" in Spanish)"
+      },
+      {
+        "number": "43",
+        "clue": "Only U.S. president buried in Washington, D.C."
+      },
+      {
+        "number": "45",
+        "clue": "Home of Firenze"
+      },
+      {
+        "number": "46",
+        "clue": "They have nine players"
+      },
+      {
+        "number": "47",
+        "clue": "Get released"
+      },
+      {
+        "number": "49",
+        "clue": "Early text messager"
+      },
+      {
+        "number": "50",
+        "clue": "One of a Disney septet"
+      },
+      {
+        "number": "53",
+        "clue": "Root of resentment, at times"
+      },
+      {
+        "number": "54",
+        "clue": "Reckon"
+      },
+      {
+        "number": "55",
+        "clue": "Word before and after an ampersand, in the grocery"
+      },
+      {
+        "number": "56",
+        "clue": "Maker of toys for girls and boys"
+      }
+    ]
+  },
+  "puzzle": [
+    [
+      "1",
+      "2",
+      "3",
+      "4",
+      "#",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "#",
+      "10",
+      "11",
+      "12",
+      "13"
+    ],
+    [
+      "14",
+      "0",
+      "0",
+      "0",
+      "#",
+      "15",
+      "0",
+      "0",
+      "0",
+      "0",
+      "#",
+      "16",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "17",
+      "0",
+      "0",
+      "0",
+      "#",
+      "18",
+      "0",
+      "0",
+      "0",
+      "0",
+      "#",
+      "19",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "20",
+      "0",
+      "0",
+      "0",
+      "21",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "22",
+      "0",
+      "0",
+      "0",
+      "#"
+    ],
+    [
+      "23",
+      "0",
+      "0",
+      "#",
+      "24",
+      "0",
+      "0",
+      "#",
+      "#",
+      "25",
+      "0",
+      "0",
+      "0",
+      "0",
+      "26"
+    ],
+    [
+      "27",
+      "0",
+      "0",
+      "28",
+      "0",
+      "0",
+      "#",
+      "29",
+      "30",
+      "0",
+      "0",
+      "#",
+      "31",
+      "0",
+      "0"
+    ],
+    [
+      "#",
+      "#",
+      "#",
+      "32",
+      "0",
+      "0",
+      "33",
+      "0",
+      "0",
+      "#",
+      "#",
+      "34",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "#",
+      "#",
+      "35",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "36",
+      "37",
+      "0",
+      "0",
+      "#",
+      "#"
+    ],
+    [
+      "38",
+      "39",
+      "0",
+      "0",
+      "#",
+      "#",
+      "40",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "#",
+      "#",
+      "#"
+    ],
+    [
+      "41",
+      "0",
+      "0",
+      "#",
+      "42",
+      "43",
+      "0",
+      "0",
+      "#",
+      "44",
+      "0",
+      "0",
+      "45",
+      "46",
+      "47"
+    ],
+    [
+      "48",
+      "0",
+      "0",
+      "49",
+      "0",
+      "0",
+      "#",
+      "#",
+      "50",
+      "0",
+      "0",
+      "#",
+      "51",
+      "0",
+      "0"
+    ],
+    [
+      "#",
+      "52",
+      "0",
+      "0",
+      "0",
+      "0",
+      "53",
+      "54",
+      "0",
+      "0",
+      "0",
+      "55",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "56",
+      "0",
+      "0",
+      "0",
+      "#",
+      "57",
+      "0",
+      "0",
+      "0",
+      "0",
+      "#",
+      "58",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "59",
+      "0",
+      "0",
+      "0",
+      "#",
+      "60",
+      "0",
+      "0",
+      "0",
+      "0",
+      "#",
+      "61",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "62",
+      "0",
+      "0",
+      "0",
+      "#",
+      "63",
+      "0",
+      "0",
+      "0",
+      "0",
+      "#",
+      "64",
+      "0",
+      "0",
+      "0"
+    ]
+  ],
+  "solution": [
+    [
+      "A",
+      "L",
+      "PH/F",
+      "A",
+      "#",
+      "I",
+      "PH/F",
+      "O",
+      "N",
+      "E",
+      "#",
+      "PH/F",
+      "O",
+      "T",
+      "O"
+    ],
+    [
+      "N",
+      "O",
+      "R",
+      "M",
+      "#",
+      "M",
+      "E",
+      "N",
+      "O",
+      "N",
+      "#",
+      "U",
+      "V",
+      "E",
+      "A"
+    ],
+    [
+      "S",
+      "C",
+      "A",
+      "B",
+      "#",
+      "I",
+      "L",
+      "I",
+      "A",
+      "D",
+      "#",
+      "T",
+      "E",
+      "N",
+      "T"
+    ],
+    [
+      "W",
+      "H",
+      "Y",
+      "I",
+      "S",
+      "N",
+      "T",
+      "T",
+      "H",
+      "E",
+      "W",
+      "O",
+      "R",
+      "D",
+      "#"
+    ],
+    [
+      "E",
+      "T",
+      "E",
+      "#",
+      "A",
+      "H",
+      "S",
+      "#",
+      "#",
+      "R",
+      "A",
+      "N",
+      "S",
+      "O",
+      "M"
+    ],
+    [
+      "R",
+      "E",
+      "D",
+      "A",
+      "T",
+      "E",
+      "#",
+      "H",
+      "I",
+      "S",
+      "S",
+      "#",
+      "T",
+      "N",
+      "T"
+    ],
+    [
+      "#",
+      "#",
+      "#",
+      "M",
+      "A",
+      "R",
+      "I",
+      "A",
+      "N",
+      "#",
+      "#",
+      "B",
+      "A",
+      "S",
+      "S"
+    ],
+    [
+      "#",
+      "#",
+      "PH/F",
+      "O",
+      "N",
+      "E",
+      "T",
+      "I",
+      "C",
+      "A",
+      "L",
+      "L",
+      "Y",
+      "#",
+      "#"
+    ],
+    [
+      "A",
+      "M",
+      "I",
+      "S",
+      "#",
+      "#",
+      "G",
+      "R",
+      "A",
+      "PH/F",
+      "E",
+      "D",
+      "#",
+      "#",
+      "#"
+    ],
+    [
+      "T",
+      "I",
+      "L",
+      "#",
+      "T",
+      "W",
+      "O",
+      "S",
+      "#",
+      "R",
+      "A",
+      "G",
+      "I",
+      "N",
+      "G"
+    ],
+    [
+      "M",
+      "A",
+      "I",
+      "T",
+      "A",
+      "I",
+      "#",
+      "#",
+      "D",
+      "A",
+      "S",
+      "#",
+      "T",
+      "O",
+      "O"
+    ],
+    [
+      "#",
+      "S",
+      "P",
+      "E",
+      "L",
+      "L",
+      "E",
+      "D",
+      "W",
+      "I",
+      "T",
+      "H",
+      "A",
+      "N",
+      "F"
+    ],
+    [
+      "E",
+      "M",
+      "I",
+      "L",
+      "#",
+      "S",
+      "N",
+      "E",
+      "A",
+      "D",
+      "#",
+      "A",
+      "L",
+      "E",
+      "R"
+    ],
+    [
+      "L",
+      "A",
+      "N",
+      "E",
+      "#",
+      "O",
+      "V",
+      "E",
+      "R",
+      "S",
+      "#",
+      "L",
+      "I",
+      "T",
+      "E"
+    ],
+    [
+      "PH/F",
+      "L",
+      "O",
+      "X",
+      "#",
+      "N",
+      "Y",
+      "M",
+      "PH/F",
+      "O",
+      "#",
+      "PH/F",
+      "A",
+      "S",
+      "E"
+    ]
+  ],
+  "title": "NYT Crossword",
+  "copyright": "2025",
+  "url": "https://www.nytimes.com/2025/01/01/crosswords/daily-puzzle-2025-01-02.html",
+  "editor": "Will Shortz",
+  "author": "Robert Charlton",
+  "date": "2025-01-02"
+}
