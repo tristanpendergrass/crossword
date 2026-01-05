@@ -3,7 +3,8 @@
     "allow": [
       "WebFetch(domain:dashboard.lamdera.app)",
       "WebFetch(domain:lamdera.com)",
-      "Bash(lamdera make:*)"
+      "Bash(lamdera make:*)",
+      "Bash(ls:*)"
     ]
   }
 }
