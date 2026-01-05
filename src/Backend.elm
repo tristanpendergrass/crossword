@@ -179,17 +179,24 @@ squaresResponseDecoder =
 -- Date formatting
 
 
+{-| Pacific Standard Time (UTC-8)
+-}
+pacificTime : Time.Zone
+pacificTime =
+    Time.customZone (-8 * 60) []
+
+
 formatDate : Time.Posix -> String
 formatDate posix =
     let
         year =
-            String.fromInt (Time.toYear Time.utc posix)
+            String.fromInt (Time.toYear pacificTime posix)
 
         month =
-            String.padLeft 2 '0' (String.fromInt (monthToInt (Time.toMonth Time.utc posix)))
+            String.padLeft 2 '0' (String.fromInt (monthToInt (Time.toMonth pacificTime posix)))
 
         day =
-            String.padLeft 2 '0' (String.fromInt (Time.toDay Time.utc posix))
+            String.padLeft 2 '0' (String.fromInt (Time.toDay pacificTime posix))
     in
     year ++ "-" ++ month ++ "-" ++ day
 
