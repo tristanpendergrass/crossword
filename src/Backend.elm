@@ -186,17 +186,47 @@ pacificTime =
     Time.customZone (-8 * 60) []
 
 
+{-| Adjust the date for the active puzzle:
+
+  - Monday → Saturday's puzzle
+  - Saturday → Friday's puzzle
+  - Other days → that day's puzzle
+
+-}
+activePuzzleDate : Time.Posix -> Time.Posix
+activePuzzleDate posix =
+    let
+        dayInMs =
+            24 * 60 * 60 * 1000
+
+        adjustment =
+            case Time.toWeekday pacificTime posix of
+                Time.Mon ->
+                    -2 * dayInMs
+
+                Time.Sat ->
+                    -1 * dayInMs
+
+                _ ->
+                    0
+    in
+    Time.millisToPosix (Time.posixToMillis posix + adjustment)
+
+
 formatDate : Time.Posix -> String
 formatDate posix =
     let
+        adjustedPosix =
+            activePuzzleDate posix
+
         year =
-            String.fromInt (Time.toYear pacificTime posix)
+            String.fromInt (Time.toYear pacificTime adjustedPosix)
 
         month =
-            String.padLeft 2 '0' (String.fromInt (monthToInt (Time.toMonth pacificTime posix)))
+            String.padLeft 2 '0' (String.fromInt (monthToInt (Time.toMonth pacificTime adjustedPosix)))
 
         day =
-            String.padLeft 2 '0' (String.fromInt (Time.toDay pacificTime posix))
+            String.padLeft 2 '0' (String.fromInt (Time.toDay pacificTime adjustedPosix))
     in
     year ++ "-" ++ month ++ "-" ++ day
 
