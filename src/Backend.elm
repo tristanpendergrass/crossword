@@ -3,7 +3,7 @@ module Backend exposing (..)
 import Http
 import Json.Decode as D
 import Json.Encode as E
-import Lamdera exposing (ClientId, SessionId, sendToFrontend)
+import Lamdera exposing (ClientId, SessionId, broadcast, sendToFrontend)
 import Puzzle
 import Task
 import Time
@@ -53,8 +53,11 @@ update msg model =
                 ( { model | fetchStatus = "Already have puzzle for " ++ date }, Cmd.none )
 
             else
-                -- Fetch today's puzzle
-                ( { model | fetchStatus = "Fetching NYT puzzle for " ++ date ++ "..." }
+                -- Fetch today's puzzle (set lastFetchDate early to prevent concurrent fetches)
+                ( { model
+                    | lastFetchDate = Just date
+                    , fetchStatus = "Fetching NYT puzzle for " ++ date ++ "..."
+                  }
                 , fetchNytPuzzle date
                 )
 
@@ -68,7 +71,8 @@ update msg model =
 
                 Err err ->
                     ( { model
-                        | lastError = Just ("NYT fetch failed for " ++ date ++ ": " ++ httpErrorToString err)
+                        | lastFetchDate = Nothing
+                        , lastError = Just ("NYT fetch failed for " ++ date ++ ": " ++ httpErrorToString err)
                         , fetchStatus = "NYT fetch failed"
                       }
                     , Cmd.none
@@ -77,18 +81,23 @@ update msg model =
         GotSquaresResponse date result ->
             case result of
                 Ok puzzleId ->
+                    let
+                        status =
+                            "Puzzle ready! ID: " ++ puzzleId
+                    in
                     ( { model
                         | currentPuzzleId = Just puzzleId
                         , lastFetchDate = Just date
                         , lastError = Nothing
-                        , fetchStatus = "Puzzle ready! ID: " ++ puzzleId
+                        , fetchStatus = status
                       }
-                    , Cmd.none
+                    , broadcast (CurrentPuzzle (Just puzzleId) Nothing status)
                     )
 
                 Err err ->
                     ( { model
-                        | lastError = Just ("Squares.io upload failed: " ++ httpErrorToString err)
+                        | lastFetchDate = Nothing
+                        , lastError = Just ("Squares.io upload failed: " ++ httpErrorToString err)
                         , fetchStatus = "Squares.io upload failed"
                       }
                     , Cmd.none
