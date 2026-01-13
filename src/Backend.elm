@@ -197,7 +197,7 @@ pacificTime =
 
 {-| Adjust the date for the active puzzle:
 
-  - Monday → Saturday's puzzle
+  - Monday → Sunday's puzzle
   - Saturday → Friday's puzzle
   - Other days → that day's puzzle
 
@@ -211,7 +211,7 @@ activePuzzleDate posix =
         adjustment =
             case Time.toWeekday pacificTime posix of
                 Time.Mon ->
-                    -2 * dayInMs
+                    -1 * dayInMs
 
                 Time.Sat ->
                     -1 * dayInMs
